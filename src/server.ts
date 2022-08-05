@@ -19,7 +19,7 @@ server.use('/', mainRoutes);
 
 // CONFIGURAÇÃO DE PÁGINA NÃO ENCONTRADA
 server.use((req, res)=>{
-    res.send('Página não encontrada')
+    res.render('pages/404');
 })
 
 // CONFIGURAÇÃO DE ESCUTA DO SERVIDOR WEB
